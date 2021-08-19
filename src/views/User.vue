@@ -18,7 +18,6 @@
       <div class="col-md-8">
         <!-- UserCommentsCard -->
         <UserCommentsCard :comments="comments" />
-
         <!-- UserFavoritedRestaurantsCard -->
         <UserFavoritedRestaurantsCard :favorited-restaurants="favoritedRestaurants" />
       </div>
@@ -1283,14 +1282,6 @@ export default {
       this.followers = Followers
       this.favoritedRestaurants = FavoritedRestaurants
       this.comments = Comments
-
-      // const commentSet = new Set()
-      // this.comments = Comments.filter(
-      //   comment =>
-      //     comment.Restaurant &&
-      //     !commentSet.has(comment.Restaurant.id) &&
-      //     commentSet.add(comment.Restaurant.id)
-      // )
     }
   }
 }
